@@ -4,7 +4,6 @@ while [ true ]
 do
 #!/bin/bash
 DIR="/home/$USER/Pictures/Backgrounds"
-PIC=$(ls $DIR/* | shuf -n 1)
-wal -g -i "$PIC"
+wal -g -i "$DIR"
 sleep 3600
 done
