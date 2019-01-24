@@ -5,7 +5,6 @@ do
 #!/bin/bash
 DIR="/home/$USER/Pictures/Backgrounds/Slideshow"
 wal -e -i "$DIR"
-steam_wal -w
 sleep 3600
 done
 
