@@ -96,6 +96,11 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# switch between TV and Monitor
+
+bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/monitorandtv.sh
+bindsym $mod+Shift+o exec --no-startup-id ~/.screenlayout/monitoronly.sh
+
 # Scratchpad commands
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
@@ -263,7 +268,7 @@ exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
 exec --no-startup-id /home/marcello/.scripts/tabletarea.sh
 exec --no-startup-id /home/marcello/.scripts/rsync.sh
-exec --no-startup-id redshift -l 52.39616:4.85468
+exec --no-startup-id redshift-gtk -l 52.39616:4.85468
 # Desktop apps
 exec --no-startup-id urxvt -name cmus -e cmus
 exec --no-startup-id urxvt -name weechat -e weechat
