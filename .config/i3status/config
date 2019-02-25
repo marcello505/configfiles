@@ -7,6 +7,7 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 ###############################################################################
+# Kappa branch config
 
 general {
     interval = 1
@@ -17,16 +18,16 @@ general {
 }
 
 order += "volume master"
-#order += "disk /"
+order += "disk /"
 #order += "disk /data"
-order += "disk /home"
+#order += "disk /home"
 #order += "run_watch DHCP"
 #order += "ipv6"
 #order += "run_watch VPN"
 #order += "wireless wlp4s0"
 #order += "ethernet enp5s0"
-#order += "battery 0"
-#order += "cpu_temperature 0"
+order += "battery 0"
+order += "cpu_temperature 0"
 order += "cpu_usage 0"
 order += "load"
 order += "tztime local"
@@ -95,12 +96,12 @@ disk "/" {
 #    threshold_type = percentage_avail
 #}
 
-disk "/home" {
-        format = " %avail"
-        prefix_type = custom
-        low_threshold = 20
-        threshold_type = percentage_avail
-}
+#disk "/data" {
+#        format = " %avail"
+#        prefix_type = custom
+#        low_threshold = 20
+#        threshold_type = percentage_avail
+#}
 
 volume master {
     format = "%volume  "
