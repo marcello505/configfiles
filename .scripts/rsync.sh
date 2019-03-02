@@ -7,3 +7,4 @@ GITDIR="/home/$USER/Documents/GitHub/configfiles"
 rsync -rtuv $HOME/.scripts/ $GITDIR/.scripts/ --delete
 rsync -rtuv $HOME/.config/i3/config $GITDIR/.config/i3/config --delete
 rsync -rtuv $HOME/.config/i3status/ $GITDIR/.config/i3status --delete
+rsync -tuv $HOME/.Xresources $GITDIR/.Xresources
