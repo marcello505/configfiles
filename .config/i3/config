@@ -16,7 +16,7 @@ new_window pixel 1
 new_float normal
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 9
+font pango:inconsolata 9
 
 # thin borders
 hide_edge_borders both
@@ -108,7 +108,7 @@ bindsym $mod+Shift+minus move scratchpad
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1:"
+set $ws1 "1:🌐"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
@@ -199,7 +199,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 # finds out, if available)
 bar {
     status_command i3status
-    font pango:monospace 9
+    font pango:inconsolata 10
 
 	colors {
         background $bg-color
@@ -257,16 +257,11 @@ bindsym Print exec mkdir /home/marcello/Pictures/Screenshots/$(date +%Y-%m)/;exe
 bindsym $mod+Print exec sharenix-section
 #bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
-
-# Redirect sound to headphones
-bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
-
 # Autostart apps
 # System apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id compton -cC
 exec --no-startup-id nm-applet
-exec --no-startup-id "sleep 2s && kalu"
 exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
 exec --no-startup-id /home/marcello/.scripts/tabletarea.sh
@@ -304,3 +299,4 @@ smart_gaps on
 # Key bindings for i3-gaps
 bindsym $mod+o gaps inner all set 0;gaps outer all set 0
 bindsym $mod+p gaps inner all set 14;gaps outer all set -2
+

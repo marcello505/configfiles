@@ -42,9 +42,10 @@ URxvt*borderColor:	[100]#00000D
 URxvt*cursorColor:	#8ee1d2
 URxvt*depth:	32
 URxvt*foreground:	#8ee1d2
-URxvt*transparent:	true
-URxvt*shading:		30
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
 URxvt*scrollBar:	false
+URxvt*font:		xft:Inconsolata:size=10
 UXTerm*background:	#00000D
 UXTerm*cursorColor:	#8ee1d2
 UXTerm*foreground:	#8ee1d2
