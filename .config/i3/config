@@ -32,7 +32,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvt -e fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -98,8 +98,9 @@ bindsym $mod+a focus parent
 
 # switch between TV and Monitor
 
-bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/monitorandtv.sh;exec notify-send "Switched to Monitor and TV"
-bindsym $mod+Shift+o exec --no-startup-id ~/.screenlayout/monitoronly.sh;exec notify-send "Switched to Monitor Only"
+bindsym $mod+Shift+i exec --no-startup-id ~/.screenlayout/monitoronly.sh;exec notify-send "Switched to Monitor Only"
+bindsym $mod+Shift+o exec --no-startup-id ~/.screenlayout/monitorandtv.sh;exec notify-send "Switched to Monitor and TV"
+bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/tvonly.sh;exec notify-send "Switched to TV Only"
 
 # Scratchpad commands
 bindsym $mod+minus scratchpad show
