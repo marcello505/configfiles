@@ -115,10 +115,11 @@ set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
-set $ws7 "7:Torrents/Mail"
-set $ws8 "8:Games"
-set $ws9 "9:Chat"
-set $ws= "TV"
+set $ws7 "7"
+set $ws8 "8:Torrents/Mail"
+set $ws9 "9:Games"
+set $ws0 "10:Chat"
+#set $ws= "TV"
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -129,7 +130,8 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+equal workspace $ws=
+bindsym $mod+0 workspace $ws0
+#bindsym $mod+equal workspace $ws=
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -141,7 +143,8 @@ bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+equal move container to workspace $ws=
+bindsym $mod+Shift+0 move container to workspace $ws0
+#bindsym $mod+Shift+equal move container to workspace $ws=
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -150,7 +153,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+0 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+equal exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock
 # bindsym $mod+9 exec i3lock --color 475263
@@ -281,13 +284,13 @@ exec --no-startup-id thunderbird
 
 # Assign apps to workspaces
 assign [class="Firefox"] $ws1
-assign [class="discord"] $ws9
-assign [class="Steam" title="Steam"] $ws8
-assign [class="Steam" title="Friends List"] $ws9
-assign [class="qBittorrent"] $ws7
-assign [class="Thunderbird"] $ws7
-assign [title="weechat"] $ws9
-assign [class="Chromium" instance="discordapp.com__app"] $ws9
+assign [class="discord"] $ws0
+assign [class="Steam" title="Steam"] $ws9
+assign [class="Steam" title="Friends List"] $ws0
+assign [class="qBittorrent"] $ws8
+assign [class="Thunderbird"] $ws8
+assign [title="weechat"] $ws0
+assign [class="Chromium" instance="discordapp.com__app"] $ws0
 
 # Settings for i3-gaps
 
