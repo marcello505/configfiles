@@ -256,7 +256,7 @@ bindsym $mod+F8 exec mocp --next
 bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec keepassxc
-bindsym $mod+F4 exec cmus
+bindsym $mod+F4 exec pavucontrol
 bindsym Print exec mkdir /home/marcello/Pictures/Screenshots/$(date +%Y-%m)/;exec maim -s "/home/$USER/Pictures/Screenshots/$(date +%Y-%m)/$(date +%F-%H:%M:%S).png"
 bindsym $mod+Print exec sharenix-section
 #bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
