@@ -261,7 +261,7 @@ bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec keepassxc
 bindsym $mod+F4 exec pavucontrol
 bindsym Print exec /home/marcello/.scripts/screenshot.sh
-bindsym $mod+Print exec sharenix-section
+bindsym $mod+Print exec /home/marcello/.scripts/sharenix.sh
 #bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # Autostart apps
