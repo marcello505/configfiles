@@ -156,7 +156,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+equal exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock
-# bindsym $mod+9 exec i3lock --color 475263
+bindsym $mod+dead_grave exec i3lock --color 475263
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -214,6 +214,9 @@ bar {
         urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
 }
+# Toggle bar
+bindsym $mod+m bar mode toggle
+
 
 # floating windows
 for_window [class="Pavucontrol"] floating enable
@@ -253,7 +256,7 @@ bindsym $mod+F7 exec mocp --previous
 bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
-bindsym $mod+F1 exec icecat
+bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec keepassxc
 bindsym $mod+F4 exec pavucontrol
@@ -276,7 +279,7 @@ exec --no-startup-id urxvt -name cmus -e cmus
 exec --no-startup-id urxvt -name weechat -e weechat
 exec --no-startup-id mullvad-vpn
 exec --no-startup-id qbittorrent
-exec --no-startup-id icecat
+exec --no-startup-id firefox
 exec --no-startup-id steam-runtime
 exec --no-startup-id chromium --app=https://discordapp.com/app
 #exec --no-startup-id discord
