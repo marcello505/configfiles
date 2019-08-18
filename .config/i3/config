@@ -226,6 +226,8 @@ for_window [class="LethalLeague"] floating enable
 for_window [title="cmus" class="URxvt"] floating enable
 for_window [title="cmus" class="URxvt"] resize set 625 400
 for_window [title="cmus" class="URxvt"] move scratchpad
+for_window [title="newsboat" class="URxvt"] floating enable
+for_window [title="newsboat" class="URxvt"] resize set 800 600
 ## Multimedia Keys
 
 # volume
@@ -277,7 +279,8 @@ exec --no-startup-id redshift-gtk -l 52.39616:4.85468
 # Desktop apps
 exec --no-startup-id urxvt -name cmus -e cmus
 exec --no-startup-id urxvt -name weechat -e weechat
-exec --no-startup-id mullvad-vpn
+exec --no-startup-id urxvt -name newsboat -e newsboat -r
+#exec --no-startup-id mullvad-vpn
 exec --no-startup-id qbittorrent
 exec --no-startup-id firefox
 exec --no-startup-id steam-runtime
@@ -286,14 +289,14 @@ exec --no-startup-id chromium --app=https://discordapp.com/app
 exec --no-startup-id thunderbird
 
 # Assign apps to workspaces
-assign [class="Firefox"] $ws1
+assign [class="firefox"] $ws1
 assign [class="Ice Cat"] $ws1
 assign [class="discord"] $ws0
 assign [class="Steam" title="Steam"] $ws9
 assign [class="Steam" title="Friends List"] $ws0
 assign [class="qBittorrent"] $ws8
 assign [class="Thunderbird"] $ws8
-assign [title="weechat"] $ws0
+assign [title="weechat" class="URxvt"] $ws0
 assign [class="Chromium" instance="discordapp.com__app"] $ws0
 
 # Settings for i3-gaps
