@@ -283,7 +283,7 @@ exec --no-startup-id urxvt -name newsboat -e newsboat -r
 #exec --no-startup-id mullvad-vpn
 exec --no-startup-id qbittorrent
 exec --no-startup-id firefox
-exec --no-startup-id steam-runtime
+exec --no-startup-id steam
 exec --no-startup-id chromium --app=https://discordapp.com/app
 #exec --no-startup-id discord
 exec --no-startup-id thunderbird
