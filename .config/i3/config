@@ -274,7 +274,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
 exec --no-startup-id /home/marcello/.scripts/tabletarea.sh
-exec --no-startup-id /home/marcello/.scripts/rsync.sh
 exec --no-startup-id redshift-gtk -l 52.39616:4.85468
 # Desktop apps
 exec --no-startup-id urxvt -name cmus -e cmus
@@ -284,8 +283,8 @@ exec --no-startup-id urxvt -name newsboat -e newsboat -r
 exec --no-startup-id qbittorrent
 exec --no-startup-id firefox
 exec --no-startup-id steam
-exec --no-startup-id chromium --app=https://discordapp.com/app
-#exec --no-startup-id discord
+#exec --no-startup-id chromium --app=https://discordapp.com/app
+exec --no-startup-id discord
 exec --no-startup-id thunderbird
 
 # Assign apps to workspaces
