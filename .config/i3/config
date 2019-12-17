@@ -221,7 +221,7 @@ bindsym $mod+m bar mode toggle
 # floating windows
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
-for_window [class="keepassxc"] floating enable
+for_window [class="KeePassXC"] floating enable
 for_window [class="LethalLeague"] floating enable
 for_window [title="cmus" class="URxvt"] floating enable
 for_window [title="cmus" class="URxvt"] resize set 625 400
