@@ -228,6 +228,10 @@ for_window [title="cmus" class="URxvt"] resize set 625 400
 for_window [title="cmus" class="URxvt"] move scratchpad
 for_window [title="newsboat" class="URxvt"] floating enable
 for_window [title="newsboat" class="URxvt"] resize set 800 600
+for_window [class="obs"] floating enable
+for_window [class="obs"] move scratchpad
+for_window [class="obs"] resize set 800 600
+for_window [class="Gnome-calculator"] floating enable
 ## Multimedia Keys
 
 # volume
@@ -262,6 +266,7 @@ bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec keepassxc
 bindsym $mod+F4 exec pavucontrol
+bindsym $mod+F12 exec gnome-calculator
 bindsym Print exec /home/marcello/.scripts/screenshot.sh
 bindsym $mod+Print exec /home/marcello/.scripts/sharenix.sh
 #bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
@@ -286,6 +291,7 @@ exec --no-startup-id steam
 #exec --no-startup-id chromium --app=https://discordapp.com/app
 exec --no-startup-id discord
 exec --no-startup-id thunderbird
+exec --no-startup-id obs --startreplaybuffer
 
 # Assign apps to workspaces
 assign [class="firefox"] $ws1
