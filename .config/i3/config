@@ -228,10 +228,11 @@ for_window [title="cmus" class="URxvt"] resize set 625 400
 for_window [title="cmus" class="URxvt"] move scratchpad
 for_window [title="newsboat" class="URxvt"] floating enable
 for_window [title="newsboat" class="URxvt"] resize set 800 600
-for_window [class="obs"] floating enable
-for_window [class="obs"] move scratchpad
-for_window [class="obs"] resize set 800 600
+#for_window [class="obs"] floating enable
+#for_window [class="obs"] move scratchpad
+#for_window [class="obs"] resize set 800 600
 for_window [class="Gnome-calculator"] floating enable
+for_window [class="Microsoft Teams - Preview"] floating enable
 ## Multimedia Keys
 
 # volume
@@ -262,13 +263,13 @@ bindsym $mod+F7 exec mocp --previous
 bindsym $mod+F8 exec mocp --next
 
 # App shortcuts
-bindsym $mod+F1 exec firefox
+bindsym $mod+F1 exec brave
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec keepassxc
 bindsym $mod+F4 exec pavucontrol
 bindsym $mod+F12 exec gnome-calculator
-bindsym Print exec /home/marcello/.scripts/screenshot.sh
-bindsym $mod+Print exec /home/marcello/.scripts/sharenix.sh
+bindsym Print exec screenshot.sh
+bindsym $mod+Print exec screenshotupload.sh
 #bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # Autostart apps
@@ -280,13 +281,14 @@ exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
 exec --no-startup-id /home/marcello/.scripts/tabletarea.sh
 exec --no-startup-id redshift-gtk -l 52.39616:4.85468
+exec --no-startup-id fcitx
 # Desktop apps
 exec --no-startup-id urxvt -name cmus -e cmus
 exec --no-startup-id urxvt -name weechat -e weechat
 exec --no-startup-id urxvt -name newsboat -e newsboat -r
 #exec --no-startup-id mullvad-vpn
 exec --no-startup-id qbittorrent
-exec --no-startup-id firefox
+exec --no-startup-id brave
 exec --no-startup-id steam
 #exec --no-startup-id chromium --app=https://discordapp.com/app
 exec --no-startup-id discord
@@ -295,6 +297,7 @@ exec --no-startup-id obs --startreplaybuffer
 
 # Assign apps to workspaces
 assign [class="firefox"] $ws1
+assign [class="Brave-browser"] $ws1
 assign [class="Ice Cat"] $ws1
 assign [class="discord"] $ws0
 assign [class="Steam" title="Steam"] $ws9
