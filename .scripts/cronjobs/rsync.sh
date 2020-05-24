@@ -10,3 +10,4 @@ rsync -rtuv $HOME/.config/i3status/ $GITDIR/.config/i3status --delete
 rsync -tuv $HOME/.Xresources $GITDIR/.Xresources
 rsync -rtuv $HOME/bin/ $GITDIR/bin --delete
 rsync -tuv $HOME/.bash_profile $GITDIR/.bash_profile
+rsync -tuv $HOME/.alacritty.yml $GITDIR/.alacritty.yml

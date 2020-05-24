@@ -32,7 +32,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -e fish
+bindsym $mod+Return exec alacritty -e fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -275,13 +275,12 @@ bindsym $mod+Print exec screenshotupload.sh
 # Autostart apps
 # System apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id compton -cC
+#exec --no-startup-id compton -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
 exec --no-startup-id /home/marcello/.scripts/tabletarea.sh
 exec --no-startup-id redshift-gtk -l 52.39616:4.85468
-exec --no-startup-id fcitx
 # Desktop apps
 exec --no-startup-id urxvt -name cmus -e cmus
 exec --no-startup-id urxvt -name weechat -e weechat
