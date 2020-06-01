@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $term alacritty
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
@@ -32,7 +33,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e fish
+bindsym $mod+Return exec $term -e fish
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -275,7 +276,7 @@ bindsym $mod+Print exec screenshotupload.sh
 # Autostart apps
 # System apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id compton -cC
+exec --no-startup-id compton -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id /home/marcello/.scripts/randombackground.sh
 exec --no-startup-id /home/marcello/.screenlayout/monitoronly.sh
