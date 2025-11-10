@@ -14,6 +14,7 @@
     #[
     #];
 
+    programs.gamemode.enable = true;
     programs.steam =
     {
         enable = true;
@@ -24,10 +25,10 @@
     {
         isNormalUser = true;
         description  = "Hydra";
-        extraGroups  = [ "networkmanager" ];
+        extraGroups  = [ "networkmanager" "gamemode" ];
         packages = with pkgs;
         [
-            #Games
+            # Games
             #openra
             #ringracers
             ioquake3
@@ -35,23 +36,12 @@
             xonotic
             ut1999
             #zeroad
+            # Utilities
+            p7zip
+            unzip
+            git
         ];
 
     };
-
-
-    environment.systemPackages =
-    [
-        #Utilities
-        #pkgs.wineWowPackages.staging
-        #pkgs.protonup-qt
-        #pkgs.winetricks
-        pkgs.fish
-        pkgs.vim
-        pkgs.p7zip
-        pkgs.unzip
-        pkgs.git
-        #pkgs.lutris
-    ];
 }
 
