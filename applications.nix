@@ -9,6 +9,7 @@
     # Media
     mpv
     # Utilities
+    git
     vim
   ];
 }
