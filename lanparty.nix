@@ -2,7 +2,19 @@
 
 
 {
+    networking.firewall.enable = false;
+
     services.flatpak.enable = true;
+    systemd.services.flatpak-repo = {
+      wantedBy = [ "multi-user.target" ];
+      path = [ pkgs.flatpak ];
+      script = ''
+        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        flatpak install --noninteractive com.usebottles.bottles
+        flatpak update --noninteractive
+      '';
+    };
+
     #xdg.portal.enable = true;
     #xdg.portal.extraPortals = with pkgs;
     #[
