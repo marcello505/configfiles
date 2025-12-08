@@ -1,0 +1,7 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/enfocado_light.toml"
+]
+
+[window]
+opacity = 0.95

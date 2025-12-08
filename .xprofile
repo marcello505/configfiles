@@ -1,0 +1,9 @@
+# Fcitx5 environment variables
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+# VCPKG_ROOT
+export VCPKG_ROOT=$HOME/.local/share/vcpkg
+
+# export QT_QPA_PLATFORMTHEME=qt5ct
