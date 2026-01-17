@@ -42,11 +42,12 @@
         [
             # Games
             #openra
-            #ringracers
+            ringracers
             ioquake3
             hedgewars
+	    serious-sam-classic
             xonotic
-            ut1999
+            #ut1999
             #zeroad
             # Utilities
             p7zip
