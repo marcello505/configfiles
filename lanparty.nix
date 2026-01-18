@@ -49,6 +49,7 @@
             #ut1999
             #zeroad
             # Utilities
+            copyparty
             p7zip
             unzip
             git
