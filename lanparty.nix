@@ -38,6 +38,7 @@
         isNormalUser = true;
         description  = "Hydra";
         extraGroups  = [ "networkmanager" "gamemode" ];
+        initialPassword = "hydra";
         packages = with pkgs;
         [
             # Games
