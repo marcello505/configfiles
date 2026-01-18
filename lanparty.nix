@@ -10,8 +10,6 @@
       path = [ pkgs.flatpak ];
       script = ''
         flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-        flatpak install --noninteractive com.usebottles.bottles
-        flatpak update --noninteractive
       '';
     };
 
@@ -46,7 +44,7 @@
             ringracers
             ioquake3
             hedgewars
-	    serious-sam-classic
+            serious-sam-classic
             xonotic
             #ut1999
             #zeroad
