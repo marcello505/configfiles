@@ -56,5 +56,9 @@
         ];
 
     };
+    nixpkgs.config.permittedInsecurePackages = [
+      "dotnet-sdk-6.0.428"    #needed for openra
+      "dotnet-runtime-6.0.36" #needed for openra
+    ];
 }
 
