@@ -40,7 +40,7 @@
         packages = with pkgs;
         [
             # Games
-            #openra
+            openra
             ringracers
             ioquake3
             hedgewars
